@@ -25,6 +25,7 @@
 #include "BaseVGM/solids/VMultiUnion.h"
 
 #include "G4Transform3D.hh"
+#include "G4Types.hh"
 
 #include <iostream>
 #include <vector>
@@ -47,7 +48,7 @@ class MultiUnion : public BaseVGM::VMultiUnion
   virtual std::string Name() const;
 
   virtual int NofSolids() const;
-  virtual ISolid* ConstituentSolid(G4int index) const;
+  virtual VGM::ISolid* ConstituentSolid(G4int index) const;
   virtual VGM::Transform Transformation(G4int index) const;
   virtual bool ToBeReflected() const;
 
