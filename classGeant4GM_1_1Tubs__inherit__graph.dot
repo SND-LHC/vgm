@@ -1,0 +1,14 @@
+digraph "Geant4GM::Tubs"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=FreeSans.ttf,fontsize=10,labelfontname=FreeSans.ttf,labelfontsize=10];
+  node [fontname=FreeSans.ttf,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="Geant4GM::Tubs",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="VGM implementation for Geant4 tubs solid."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="BaseVGM::VTubs",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classBaseVGM_1_1VTubs.html",tooltip="The ABC for tubs solids."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="VGM::ITubs",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classVGM_1_1ITubs.html",tooltip="The VGM interface to tubs solids."];
+  Node4 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="VGM::ISolid",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classVGM_1_1ISolid.html",tooltip="The VGM interface to solids."];
+}

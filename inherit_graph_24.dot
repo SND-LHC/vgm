@@ -1,0 +1,15 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=FreeSans.ttf,fontsize=10,labelfontname=FreeSans.ttf,labelfontsize=10];
+  node [fontname=FreeSans.ttf,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [label="VGM::IPlacement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classVGM_1_1IPlacement.html",tooltip="The VGM interface to positions of volumes."];
+  Node0 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node1 [label="BaseVGM::VPlacement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classBaseVGM_1_1VPlacement.html",tooltip="The abstract base class to positions of volumes."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Geant4GM::Placement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classGeant4GM_1_1Placement.html",tooltip="VGM implementation for Geant4 positions of volumes."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="RootGM::Placement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classRootGM_1_1Placement.html",tooltip="VGM implementation for Root positions of volumes."];
+}

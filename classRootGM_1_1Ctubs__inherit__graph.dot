@@ -1,0 +1,14 @@
+digraph "RootGM::Ctubs"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=FreeSans.ttf,fontsize=10,labelfontname=FreeSans.ttf,labelfontsize=10];
+  node [fontname=FreeSans.ttf,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="RootGM::Ctubs",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="VGM implementation for Root cut tubs solid."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="BaseVGM::VCtubs",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classBaseVGM_1_1VCtubs.html",tooltip="The ABC for cut tubs solids."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="VGM::ICtubs",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classVGM_1_1ICtubs.html",tooltip="The VGM interface to cut tubs solids."];
+  Node4 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="VGM::ISolid",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classVGM_1_1ISolid.html",tooltip="The VGM interface to solids."];
+}

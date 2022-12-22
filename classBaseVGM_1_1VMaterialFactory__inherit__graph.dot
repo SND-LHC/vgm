@@ -1,0 +1,14 @@
+digraph "BaseVGM::VMaterialFactory"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=FreeSans.ttf,fontsize=10,labelfontname=FreeSans.ttf,labelfontsize=10];
+  node [fontname=FreeSans.ttf,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="BaseVGM::VMaterialFactory",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="The abstract base class to material factory."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="VGM::IMaterialFactory",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classVGM_1_1IMaterialFactory.html",tooltip="The VGM interface to material factory providing functions for material conversions."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Geant4GM::MaterialFactory",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classGeant4GM_1_1MaterialFactory.html",tooltip="VGM material factory for Geant4."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="RootGM::MaterialFactory",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classRootGM_1_1MaterialFactory.html",tooltip="VGM material factory for Root."];
+}
